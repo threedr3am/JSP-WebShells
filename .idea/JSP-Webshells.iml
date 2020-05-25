@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/jsp/1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/6" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/7" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/10" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/8" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/9" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/11" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/12" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/13" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/14" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/15" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/16" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="jdk" jdkName="jdk8u241" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" name="Maven: com.unboundid:unboundid-ldapsdk:3.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.31" level="project" />
+  </component>
+</module>
