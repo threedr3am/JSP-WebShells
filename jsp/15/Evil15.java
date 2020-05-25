@@ -5,10 +5,7 @@ import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-/**
- * @author threedr3am
- */
-public class Threedr3am_15 {
+public class Evil15 {
 
     static {
         StringBuilder stringBuilder = new StringBuilder();

