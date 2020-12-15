@@ -2,9 +2,6 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-/**
- * @author threedr3am
- */
 public class Calc {
     static {
         StringBuilder stringBuilder = new StringBuilder();

