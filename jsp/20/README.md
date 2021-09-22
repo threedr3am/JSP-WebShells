@@ -6,7 +6,7 @@
 
 生成字节码(使用 2.jsp 中的类)：
 ```
-javac ByteCodeEvil.class
+javac ByteCodeEvil.java
 java ByteCodeEvil
 cat ByteCodeEvil.class|base64
 ```
