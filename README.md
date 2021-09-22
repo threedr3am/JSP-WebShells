@@ -21,6 +21,7 @@
 17. Runtime.exec的JSP Webshell
 18. 利用TemplatesImpl反序列化的JSP Webshell
 19. 精简一句话ScriptEngine.eval的JSP Webshell
+20. 反射调用 Proxy native 方法 defineClass0 加载类字节码 Webshell
 
 ### 分类
 
@@ -48,6 +49,7 @@
 9. BCEL类加载器进行一定包装-可能在某些禁了loadClass方法的地方bypass的JSP Webshell: 15.jsp
 10. VersionHelper包装的URLClassLoader类加载器的JSP Webshell: 16.jsp 
 11. 利用TemplatesImpl反序列化的JSP Webshell: 18.jsp
+12. 利用 Proxy native 方法 defineClass0 加载类字节码 Webshell: 20.jsp
 
 #### 四、动态编译
 1. javac动态编译class的JSP Webshell: 5.jsp
