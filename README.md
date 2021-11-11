@@ -22,6 +22,7 @@
 18. 利用TemplatesImpl反序列化的JSP Webshell
 19. 精简一句话ScriptEngine.eval的JSP Webshell
 20. 反射调用 Proxy native 方法 defineClass0 加载类字节码 Webshell
+21. 使用JDK自带的ASM框架构造字节码并加载 Webshell
 
 ### 分类
 
