@@ -1,4 +1,4 @@
-### BCEL类加载器进行一定包装-可能在某些禁了loadClass方法的地方bypass的JSP Webshell
+### BCEL类加载器进行一定包装-可能在某些禁了loadClass方法的地方bypass的JSP WebShell
 
 生成BCEL字节码：
 ```

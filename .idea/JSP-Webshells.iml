@@ -20,6 +20,12 @@
       <sourceFolder url="file://$MODULE_DIR$/jsp/14" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/jsp/15" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/jsp/16" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/17" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/18" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/19" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/20" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/21" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jsp/22" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -29,5 +35,7 @@
     <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:8.5.43" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.43" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-annotations-api:8.5.43" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-jasper:8.5.43" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jdt:ecj:3.12.3" level="project" />
   </component>
 </module>

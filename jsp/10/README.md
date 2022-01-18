@@ -1,4 +1,4 @@
-### SPI机制的ScriptEngineManager自动加载实例化JSP Webshell
+### SPI机制的ScriptEngineManager自动加载实例化JSP WebShell
 
 编译SPI jar：
 ```

